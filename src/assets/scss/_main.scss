@@ -110,6 +110,7 @@ body{
             cursor: pointer;
             margin-bottom: 10px;
             transition: all 300ms ease-out;
+            min-width: max-content;
 
             &.welcome-user{
                 background-color: #45269C;
