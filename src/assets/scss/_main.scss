@@ -1,0 +1,107 @@
+@import "./variables.scss";
+
+
+*{
+    padding: 0%;
+    font-family: 'Inter';
+    margin: 0%;
+}
+
+
+body{
+    background-color: $primary;
+    color: $text-color;
+    scroll-behavior: smooth;
+}
+
+.App{
+    display: flex;
+    max-width: 100vw;
+    overflow: hidden;
+    // Adding more responsiveness just in case 
+}
+
+
+.sidebar{
+    width: 100%;
+    max-width: 250px;
+    color: white;
+    position: relative;
+    background-color: $side-navigation-background;
+    height: 100vh;
+    min-height: 100vh;
+    max-height: 100vh;
+
+    .content{
+        padding: 38px 32px;
+        
+        .bottom_side_navigation{
+            opacity: 0.7;
+        }
+        
+        li{
+            list-style: none;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+            display: flex;
+            padding: 10px 0px;
+            margin: 1.2vh 0px;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.3s ease-out;
+
+
+            &:hover{
+                color: rgb(47, 49, 45);
+            }
+
+            img{
+                margin-right: 10px;
+            }
+        }
+
+        hr{
+            opacity: 0.5;
+            margin: 30px 2px;
+        }
+
+        button{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            max-width: 100%;
+            width: 100%;
+            padding: 15px 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            border: none;
+            color: white;
+            outline: none;
+            cursor: pointer;
+            margin-bottom: 10px;
+
+            &.welcome-user{
+                background-color: #45269C;
+                margin-bottom: 30px;
+            }
+
+            &.add-project{
+                background-color: #703EFE;
+                position: absolute;
+                bottom: 3vh;
+                max-width: calc(100% - 64px);
+                
+            }
+
+            span{
+                min-width: max-content;
+                margin-left: 10px;
+            }
+        }
+        
+    }
+}
