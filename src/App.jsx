@@ -10,7 +10,7 @@ function App() {
       <nav>
         <Sidebar />
       </nav>
-      <div>
+      <div className="main">
         <Main />
       </div>
     </div>

@@ -18,18 +18,44 @@ body{
     display: flex;
     max-width: 100vw;
     overflow: hidden;
+    min-width: 100vw;
     // Adding more responsiveness just in case 
+    background-color: $bg-1;
+
+    .main{
+        width: 100%;
+
+        button{
+            font-weight: 400;
+            border: none;
+            outline: none;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            line-height: 17px;
+            transition: all 250ms ease-out;
+
+            &:hover{
+                background-color: rgb(106, 106, 106);
+                color: $grey-color;
+            }
+        }
+    }
 }
 
 
 .sidebar{
     width: 100%;
     max-width: 250px;
+    // position: fixed;
+    overflow: hidden;
     color: white;
     position: relative;
     background-color: $side-navigation-background;
     height: 100vh;
     min-height: 100vh;
+    transition: width 300ms ease-out;
     max-height: 100vh;
 
     .content{
@@ -83,6 +109,7 @@ body{
             outline: none;
             cursor: pointer;
             margin-bottom: 10px;
+            transition: all 300ms ease-out;
 
             &.welcome-user{
                 background-color: #45269C;
@@ -97,11 +124,97 @@ body{
                 
             }
 
+            &:hover{
+                opacity: 0.77;
+                color: grey;
+            }
+
             span{
                 min-width: max-content;
                 margin-left: 10px;
             }
         }
         
+    }
+
+    // &.active{
+    //     width: 100%;
+    // }
+}
+
+
+.topbar{
+    background-color: white;
+    box-shadow: 0px 4px 148px rgba(0, 0, 0, 0.02);
+    padding: 4vh 5vw;
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h1{
+            font-weight: 600;
+            font-size: 33px;
+            line-height: 40px;
+            margin-bottom: 5px;
+            letter-spacing: -0.02em;
+        }
+
+        p{
+            color: $grey-color;
+            font-size: 15px;
+        }
+        button{
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+        }
+    }
+
+    .views{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 5vh 0px 0vh 0px;
+        color: $grey-color;
+
+        .track-members{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        img{
+            margin-right: 5px;
+        }
+
+
+        .view-list{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            ul{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+
+                li{
+                    list-style: none;
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 3px;
+                    margin-right: 2vw;
+
+                   
+                }
+            }
+
+     
+        }
     }
 }

@@ -1,9 +1,12 @@
+import Topbar from "./topbar"
+import Content from "./content"
 
 
 const Main = () => {
     return(
         <>
-            hii
+            <Topbar />
+            <Content />
         </>
     )
 }
