@@ -47,7 +47,7 @@ body{
 
 .sidebar{
     width: 100%;
-    max-width: 270px;
+    max-width: 250px;
     // position: fixed;
     overflow: hidden;
     color: white;
@@ -60,6 +60,7 @@ body{
 
     .content{
         padding: 38px 32px;
+        padding-right: 50px;
         
         .bottom_side_navigation{
             opacity: 0.7;
@@ -115,6 +116,7 @@ body{
             &.welcome-user{
                 background-color: #45269C;
                 margin-bottom: 30px;
+                font-size: 13px;
             }
 
             &.add-project{
@@ -122,6 +124,7 @@ body{
                 position: absolute;
                 bottom: 3vh;
                 max-width: calc(100% - 64px);
+                font-size: 15px;
                 
             }
 
