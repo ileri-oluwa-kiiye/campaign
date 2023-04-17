@@ -3,11 +3,11 @@
 <br>
 
 # Code Structure
-This webpage was built with Vite, React and SASS. The 'index.html' is the root of the webpage. The assets folder contains the components of the web app, all images and teh sass code too.
+This webpage was built with Vite, React and SASS. The 'index.html' is the root of the webpage. The assets folder contains the components of the web app, all images and the sass code too.
 
 <br>
 
-## Here is a screenshot of the webapp:
+## A screenshot of the webapp:
 ![Pictorial Representation](./src/assets/img/site.png)
 
 <br>
