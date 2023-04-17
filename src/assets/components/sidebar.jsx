@@ -65,17 +65,21 @@ return(
                 </button>
                 <ul className="top_side_navigation">
                     {top_nav_links.map((link, index) => (
-                        <li key={index}>
-                            <img src={link.icon} alt={link.title} /> <span>{link.title}</span>
-                        </li>
+                        <a href="">
+                            <li key={index}>
+                                <img src={link.icon} alt={link.title} /> <span>{link.title}</span>
+                            </li>
+                        </a>
                     ))}
                 </ul>
                 <hr />
                 <ul className="bottom_side_navigation">
                     {bottom_nav_links.map((link, index) => (
-                        <li key={index}>
-                            <img src={link.icon} alt={link.title} /> <span>{link.title}</span>
-                        </li>
+                        <a href="">
+                            <li key={index}>
+                                <img src={link.icon} alt={link.title} /> <span>{link.title}</span>
+                            </li>
+                        </a>
                     ))}
                 </ul>
                 <button className="add-project">
