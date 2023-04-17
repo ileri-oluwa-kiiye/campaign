@@ -6,7 +6,7 @@ import chat from "../img/chat.png"
 import link from "../img/link.png"
 import progresslist from "../img/progress-list.png"
 import profile_stack from "../img/profile-stack.png"
-import slider from "../img/slider.png"
+import slider from "../img/sliderr.png"
 import inprogress from "../img/Inprogress.png"
 import done from "../img/Done.png"
 
