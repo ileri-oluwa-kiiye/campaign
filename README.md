@@ -7,9 +7,18 @@ This webpage was built with Vite, React and SASS. The 'index.html' is the root o
 
 <br>
 
+
+
+# Difficulties Encountered
+I didn't have so much trouble during the build of this. It was my first time working with Vite, and I had a seamless transition to it. <br> The only issues were during the deploy of this site. The deploy was case sensitive when considering the name of the images.
+
+<br>
+
 ## A screenshot of the webapp:
 ![Pictorial Representation](./src/assets/img/site.png)
 
 <br>
 
+
 This site is optimised for all screens greater than 1200px. [Here is a link to the optimised site](https://campaign-ileri.netlify.app).
+
