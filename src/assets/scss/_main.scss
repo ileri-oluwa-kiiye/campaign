@@ -228,7 +228,10 @@ body{
                     align-items: center;
                     padding: 3px;
                     margin-right: 2vw;
-                    min-width: calc(max-content + 2vw);
+
+                    span{
+                        min-width: max-content;
+                    }
                    
                 }
             }
