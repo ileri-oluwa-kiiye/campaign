@@ -58,7 +58,7 @@ const Sidebar = () => {
 return(
     <>
         <div className="sidebar">
-            <div className="content">
+            <div className="content active">
                 <button className="welcome-user">
                     <img src={profile} alt="Welcome" />
                     <span>Welcome Keerthi</span>
