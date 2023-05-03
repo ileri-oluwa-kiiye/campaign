@@ -379,11 +379,11 @@ body{
     
     
     .sidebar{
-        width: 0%;
+        width: 00%;
         max-width: 250px;
-        // position: fixed;
+        position: fixed;
         overflow: hidden;
-        height: 0vh;
+        height: 100vh;
         min-height: 0vh;
         transition: width 300ms ease-out;
     
@@ -443,9 +443,9 @@ body{
             
         }
     
-        // &.active{
-        //     width: 100%;
-        // }
+        &.active{
+            width: 100%;
+        }
     }
     
     

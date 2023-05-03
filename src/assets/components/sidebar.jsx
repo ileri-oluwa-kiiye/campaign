@@ -1,6 +1,7 @@
 
 // Importing every single icon from the img folder 
 import dashboard from "../img/dashboard.png"
+import React, {useState} from "react"
 import settings from "../img/settings.png"
 import activities from "../img/activities.png"
 import users from "../img/users.png"
@@ -12,6 +13,11 @@ import add from "../img/whiteplus.png"
 
 
 const Sidebar = () => {
+
+
+    // onclick= {()=>{setMenuActive(!menuActive)}}
+
+    // const [menuActive, setMenuActive] = useState(false)
     // All the links that'll be in the top side nav 
     const top_nav_links = [
         {
@@ -57,8 +63,8 @@ const Sidebar = () => {
 
 return(
     <>
-        <div className="sidebar">
-            <div className="content active">
+        <div className="sidebar activ">
+            <div className="content">
                 <button className="welcome-user">
                     <img src={profile} alt="Welcome" />
                     <span>Welcome Keerthi</span>
