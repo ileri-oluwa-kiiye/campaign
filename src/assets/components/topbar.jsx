@@ -33,8 +33,10 @@ const Topbar = () => {
 
                 <header>
                     <div>
-                        <h1>New Campaign Run </h1>
-                        <p>A new campaign launch work for brand new featur in May month</p>
+                        <div>
+                            <h1>New Campaign Run </h1>
+                            <p>A new campaign launch work for brand new featur in May month</p>
+                        </div>
                     </div>
                     <button>ADD MEMBERS</button>
                 </header>

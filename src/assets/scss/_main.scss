@@ -242,6 +242,58 @@ body{
 }
 
 
+.hamburger-menu{
+    width: fit-content;
+    position: absolute;
+    top: 37px;
+    right: 15px;
+
+
+    span.menu-line{
+        border-radius: 8px;
+        min-width: 25px;
+        width: 25px;
+        min-height: 4px;
+        transition: all 0.3s ease;
+        margin-bottom: 2px;
+        background-color: $side-navigation-background;
+        display: block;
+    }
+}
+
+
+.close-menu{
+    width: fit-content;
+    position: absolute;
+    top: 37px;
+    right: 15px;
+
+    span.menu-line{
+        border-radius: 8px;
+        min-width: 25px;
+        width: 25px;
+        transition: all 0.3s ease;
+        min-height: 4px;
+        margin-bottom: 2px;
+        background-color: $side-navigation-background;
+        display: block;
+
+
+        &.hide{
+            display: none;
+        }
+
+        &.left{
+            transform: translateY(3px) rotate(45deg);
+        }
+
+        &.right{
+            transform: translateY(-3px) rotate(-45deg);
+        }
+    }
+}
+
+
 .main-tasks{
     display: flex;
     align-items: flex-start;
@@ -377,6 +429,7 @@ body{
         }
     }
     
+
     
     .sidebar{
         width: 00%;

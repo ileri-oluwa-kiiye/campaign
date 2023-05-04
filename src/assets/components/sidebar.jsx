@@ -15,9 +15,11 @@ import add from "../img/whiteplus.png"
 const Sidebar = () => {
 
 
-    // onclick= {()=>{setMenuActive(!menuActive)}}
+    
 
-    // const [menuActive, setMenuActive] = useState(false)
+    const [menuActive, setMenuActive] = useState(false)
+
+
     // All the links that'll be in the top side nav 
     const top_nav_links = [
         {
@@ -63,7 +65,13 @@ const Sidebar = () => {
 
 return(
     <>
-        <div className="sidebar activ">
+        <div className={menuActive? 'close-menu' : 'hamburger-menu'} onClick= {()=>{setMenuActive(!menuActive)}}>
+            <span className="menu-line left"></span>
+            <span className="menu-line hide"></span>
+            <span className="menu-line right"></span>
+        </div>
+        {/* <div className="sidebar active"> */}
+        <div className={menuActive? 'sidebar active' : 'sidebar non-active'} >
             <div className="content">
                 <button className="welcome-user">
                     <img src={profile} alt="Welcome" />
